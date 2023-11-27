@@ -2,7 +2,7 @@ import styled from "styled-components";
 import heroImg from "../../assets/hero.jpeg";
 
 const HeroSection = styled.section`
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(${heroImg});
   width: 100%;
   height: 100vh;
@@ -17,7 +17,12 @@ const HeroSection = styled.section`
 
 const HeroContent = styled.div`
   padding: 200px 180px;
-  @media (max-width: 768px) {
+  @media (min-width: 300px) {
+    padding: 200px 10px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 200px 180px;
   }
 `;
 
@@ -34,8 +39,12 @@ const MainHeading = styled.h1`
 const SecondaryParagraph = styled.p`
   margin: 20px 0;
 
-  @media (max-width: 768px) {
+  @media (min-width: 300px) {
     display: none;
+  }
+
+  @media (min-width: 768px) {
+    display: block;
   }
 `;
 

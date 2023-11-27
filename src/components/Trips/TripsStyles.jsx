@@ -6,6 +6,23 @@ const TripsContainer = styled.div`
   align-items: center;
   margin: 50px auto;
   padding: 0 180px;
+
+  @media (min-width: 300px) {
+    padding: 10px;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 0 100px;
+    margin: 50px auto;
+    gap: 30px;
+  }
+
+  @media (min-width: 1600px) {
+    padding: 0 180px;
+    flex-direction: row;
+  }
 `;
 
 const ImgContainer = styled.div`
@@ -13,6 +30,15 @@ const ImgContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 30px;
+
+  @media (min-width: 300px) {
+    width: 100%;
+    gap: 5px;
+  }
+
+  @media (min-width: 1024px) {
+    gap: 30px;
+  }
 `;
 
 const LeftImg = styled.img`
@@ -20,6 +46,15 @@ const LeftImg = styled.img`
   height: 350px;
   margin: 10px auto;
   object-fit: cover;
+
+  @media (min-width: 300px) {
+    width: 100%;
+    margin: auto;
+  }
+
+  @media (min-width: 1024px) {
+    margin: 10px auto;
+  }
 `;
 
 const RightImg = styled.img`
@@ -27,6 +62,15 @@ const RightImg = styled.img`
   height: 225px;
   margin: 10px auto;
   object-fit: cover;
+
+  @media (min-width: 300px) {
+    width: 100%;
+    margin: 5px auto;
+  }
+
+  @media (min-width: 1024px) {
+    margin: 10px auto;
+  }
 `;
 
 const Heading = styled.h2`

@@ -7,6 +7,7 @@ import {
   LeftImg,
   RightImg,
   Heading,
+  RightImgDiv,
 } from "./RoomsStyled";
 
 const Rooms = () => {
@@ -27,9 +28,9 @@ const Rooms = () => {
             <LeftImg src={room1} alt="room" />
             <LeftImg src={room3} alt="room" />
           </div>
-          <div>
+          <RightImgDiv>
             <RightImg src={room2} alt="room" />
-          </div>
+          </RightImgDiv>
         </ImgContainer>
       </Container>
     </section>

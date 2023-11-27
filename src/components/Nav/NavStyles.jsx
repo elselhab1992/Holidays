@@ -18,6 +18,7 @@ const Navbar = styled.nav`
   position: relative;
   @media (max-width: 1024px) {
     justify-content: space-between;
+    padding: 0 30px;
   }
 `;
 
@@ -40,14 +41,15 @@ const MobileLinks = styled.ul`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 5rem;
     position: absolute;
     top: 90px;
     right: 0;
     z-index: 1;
     text-align: center;
     width: 100%;
-    padding: 2rem;
+    height: 100vh;
+    padding: 5rem 0;
     background-color: #fff;
     transition: 0.5s ease;
   }
@@ -69,7 +71,6 @@ const NavIcons = styled.div`
   @media (max-width: 1024px) {
     display: block;
     cursor: pointer;
-    padding-right: 40px;
   }
 `;
 

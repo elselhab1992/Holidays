@@ -5,12 +5,35 @@ const Container = styled.div`
   margin: auto;
   padding-top: 350px;
   position: relative;
+
+  @media (min-width: 300px) {
+    width: 100%;
+    padding: 820px 10px 10px 10px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 92%;
+    padding-top: 500px;
+
+    @media (min-width: 1600px) {
+      width: 81%;
+      padding-top: 250px;
+    }
+  }
 `;
 
 const Imgs = styled.img`
   width: 100%;
   height: 450px;
   object-fit: cover;
+
+  @media (min-width: 300px) {
+    height: 300px;
+  }
+
+  @media (min-width: 1600px) {
+    height: 450px;
+  }
 `;
 
 const SliderBtns = styled.div`

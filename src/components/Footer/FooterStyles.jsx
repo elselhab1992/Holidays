@@ -5,12 +5,28 @@ const FooterItems = styled.footer`
   color: #fff;
   padding: 30px 180px;
   margin-top: 100px;
+
+  @media (min-width: 300px) {
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 30px 180px;
+    margin-top: 70px;
+  }
 `;
 
 const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: start;
+
+  @media (min-width: 300px) {
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: auto;
+  }
 `;
 
 const SubscribePara = styled.p`
@@ -20,6 +36,14 @@ const SubscribePara = styled.p`
 const Input = styled.input`
   padding: 10px;
   width: 70%;
+
+  @media (min-width: 300px) {
+    width: 60%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 70%;
+  }
 `;
 
 const Button = styled.button`
@@ -53,6 +77,15 @@ const Copyrights = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: 300px) {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
 `;
 
 const Icons = styled.div`
