@@ -41,15 +41,6 @@ const Footer = () => {
         </div>
 
         <div>
-          <h3>Legal</h3>
-          <p>Claims</p>
-          <p>Privacy</p>
-          <p>Terms</p>
-          <p>Policies</p>
-          <p>Conditions</p>
-        </div>
-
-        <div>
           <h3>SUBSCRIBE TO OUR NEWSLETTERS</h3>
           <SubscribePara>
             The Latest deals, articles and resources sent to your inbox weekly.

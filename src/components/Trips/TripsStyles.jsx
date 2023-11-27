@@ -76,6 +76,14 @@ const RightImg = styled.img`
 const Heading = styled.h2`
   font-size: 50px;
   font-weight: 800;
+
+  @media (min-width: 300px) {
+    font-size: 30px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 50px;
+  }
 `;
 
 const Question = styled.p`
