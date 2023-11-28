@@ -17,7 +17,7 @@ import {
 
 const Trips = () => {
   return (
-    <section>
+    <section id="trips">
       <TripsContainer>
         {/* left */}
         <ImgContainer>

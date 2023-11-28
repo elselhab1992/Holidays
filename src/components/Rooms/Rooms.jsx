@@ -12,7 +12,7 @@ import {
 
 const Rooms = () => {
   return (
-    <section>
+    <section id="rooms">
       <Container>
         {/* left */}
         <div>

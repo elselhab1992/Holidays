@@ -9,6 +9,7 @@ import {
   MobileItem,
 } from "./NavStyles";
 import { useState } from "react";
+import { Link } from "react-scroll";
 
 const Nav = () => {
   const [nav, setNav] = useState(false);
@@ -29,16 +30,64 @@ const Nav = () => {
         {/* desktop links */}
         <DesktopLinks>
           <li>
-            <ListItem href="#">Home</ListItem>
+            <ListItem
+              as={Link}
+              to="/"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              Home
+            </ListItem>
           </li>
           <li>
-            <ListItem href="#">Offers</ListItem>
+            <ListItem
+              as={Link}
+              to="trips"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={500}
+            >
+              trips
+            </ListItem>
           </li>
           <li>
-            <ListItem href="#">About</ListItem>
+            <ListItem
+              as={Link}
+              to="rooms"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={500}
+            >
+              rooms
+            </ListItem>
           </li>
           <li>
-            <ListItem href="#">Contact</ListItem>
+            <ListItem
+              as={Link}
+              to="food"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={500}
+            >
+              food
+            </ListItem>
+          </li>
+          <li>
+            <ListItem
+              as={Link}
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={500}
+            >
+              Contact
+            </ListItem>
           </li>
         </DesktopLinks>
         <NavIcons onClick={handleNav}>
@@ -52,22 +101,67 @@ const Nav = () => {
         {nav ? (
           <MobileLinks>
             <li>
-              <MobileItem href="#" onClick={closeNav}>
+              <MobileItem
+                as={Link}
+                to="/"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                onClick={closeNav}
+              >
                 Home
               </MobileItem>
             </li>
             <li>
-              <MobileItem href="#" onClick={closeNav}>
-                Offers
+              <MobileItem
+                as={Link}
+                to="trips"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                onClick={closeNav}
+              >
+                trips
               </MobileItem>
             </li>
             <li>
-              <MobileItem href="#" onClick={closeNav}>
-                About
+              <MobileItem
+                as={Link}
+                to="rooms"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                onClick={closeNav}
+              >
+                rooms
               </MobileItem>
             </li>
             <li>
-              <MobileItem href="#" onClick={closeNav}>
+              <MobileItem
+                as={Link}
+                to="food"
+                spy={true}
+                smooth={true}
+                offset={700}
+                duration={500}
+                onClick={closeNav}
+              >
+                food
+              </MobileItem>
+            </li>
+            <li>
+              <MobileItem
+                as={Link}
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                onClick={closeNav}
+              >
                 Contact
               </MobileItem>
             </li>

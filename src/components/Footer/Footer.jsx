@@ -12,7 +12,7 @@ import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <FooterItems>
+    <FooterItems id="contact">
       <Container>
         <div>
           <h3>solutions</h3>

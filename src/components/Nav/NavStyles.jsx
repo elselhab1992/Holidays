@@ -59,10 +59,12 @@ const ListItem = styled.a`
   color: #fff;
   font-size: 20px;
   font-weight: bold;
+  cursor: pointer;
 `;
 
 const MobileItem = styled(ListItem)`
   color: #000;
+  cursor: pointer;
 `;
 
 const NavIcons = styled.div`

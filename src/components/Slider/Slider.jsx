@@ -5,7 +5,7 @@ import { Container, Imgs, SliderBtns, SliderArrow } from "./SliderStyles";
 
 const Slider = () => {
   return (
-    <section>
+    <section id="food">
       <Container>
         <Swiper {...sliderSettings}>
           <SliderButtons />
